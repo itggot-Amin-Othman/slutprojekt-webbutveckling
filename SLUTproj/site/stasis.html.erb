@@ -1,0 +1,9 @@
+
+<h1 class=stasistitel> Stasis, vad är det och hur används det? </h1>
+<h2> Vad och varför? </h2>
+<p> Stasis och sass används för att göra det enklare för den som skriver koden samt för den som sedan läser den. Stasis låter dig skriva flera olika filer som sedan sammanställs till en enda fil. Genom att endast ha en fil kan man effektivisera överföringen av data över internet. </p>
+<p> </p>
+<h2> Hur? </h2>
+<p> Installera först stasis och sass genom att i terminalen köra <br /> gem install stasis <br /> gem install sass <br /> <br /> Lägg till filändelsen .erb på alla .html-filer (inklusive .html) <br />  Skapa en ruby fil döpt till "controller.rb" i samma mapp som dina html filer och skriv in <br /> ignore( /\/_.*/) <br /> ignore(/.*.sass-cache.*/) <br />  layout('layout.html.erb') <br /> <br /> I terminalen, navigera till mappen med dessa filer och kör
+stasis <br /> Detta skapar en public-mapp med dina genererade statiska sidor. <br />
+<p>

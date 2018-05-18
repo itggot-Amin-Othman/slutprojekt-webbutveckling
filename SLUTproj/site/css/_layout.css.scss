@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 95vh, 5vh;
     height: auto;
     width: 720px;
     margin: auto;
@@ -28,6 +28,11 @@ header{
         padding: 0;
         background-image: url(../img/slutheaderS.png);
     }
+    .container {
+        width: 100vw;
+    }
+
+
 }
 
 /* 
@@ -42,4 +47,8 @@ header{
         padding: 0;
         background-image: url(../img/slutheaderM.png);
     }
+    .container {
+        width: 480px;
+    }
+
 }
