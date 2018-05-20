@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
-  background-image: url(); }
+  font-family: "Lato", sans-serif; }
 
 .container {
   display: grid;
