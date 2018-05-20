@@ -9,17 +9,22 @@
 </head>
 <body>
         <header>
-                <nav>
-                   <a href="start.html">Home</a>
-                   <a href="stasis.html">Stasis</a>
-                   <a href="adaptiv.html">Adaptiv</a>
-                   <a href="js.html">Java Script</a>
-                   <a href="bild.html">Bildbehandling</a> 
-                   <a href="csss.html">CSS Spread</a>
-                   <a href="mini.html">Minifier</a>  
-                </nav>
+                <div id= "myMenu" class="menu">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                        <li><a href="start.html">Home</a></li>
+                        <li><a href="stasis.html">Stasis</a></li>
+                        <li><a href="adaptiv.html">Adaptiv</a></li>
+                        <li><a href="js.html">Java Script</a></li>
+                        <li><a href="bild.html">Bildbehandling</a></li>
+                        <li><a href="csss.html">CSS Spread</a></li>
+                        <li><a href="mini.html">Minifier</a></li>  
+                    </ul>
+                </div>
+                <span style="font-size:48px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <script src="js/menu.js"></script>
             </header>
-    <div class=container>
+    <div id= "main" class=container>
         <main>
             <%= yield %>
         </main>

@@ -9,17 +9,22 @@
 </head>
 <body>
         <header>
-                <nav>
-                   <a href="start.html">Home</a>
-                   <a href="stasis.html">Stasis</a>
-                   <a href="adaptiv.html">Adaptiv</a>
-                   <a href="js.html">Java Script</a>
-                   <a href="bild.html">Bildbehandling</a> 
-                   <a href="csss.html">CSS Spread</a>
-                   <a href="mini.html">Minifier</a>  
-                </nav>
+                <div id= "myMenu" class="menu">
+                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                        <li><a href="start.html">Home</a></li>
+                        <li><a href="stasis.html">Stasis</a></li>
+                        <li><a href="adaptiv.html">Adaptiv</a></li>
+                        <li><a href="js.html">Java Script</a></li>
+                        <li><a href="bild.html">Bildbehandling</a></li>
+                        <li><a href="csss.html">CSS Spread</a></li>
+                        <li><a href="mini.html">Minifier</a></li>  
+                    </ul>
+                </div>
+                <span style="font-size:48px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <script src="js/menu.js"></script>
             </header>
-    <div class=container>
+    <div id= "main" class=container>
         <main>
             
 <h1 class=stasistitel> Stasis, vad är det och hur används det? </h1>
@@ -30,7 +35,7 @@
 <p> Installera först stasis och sass genom att i terminalen köra <br /> gem install stasis <br /> gem install sass <br /> <br /> Lägg till filändelsen .erb på alla .html-filer (inklusive .html) <br />  Skapa en ruby fil döpt till "controller.rb" i samma mapp som dina html filer och skriv in <br /> ignore( /\/_.*/) <br /> ignore(/.*.sass-cache.*/) <br />  layout('layout.html.erb') <br /> <br /> I terminalen, navigera till mappen med dessa filer och kör
 stasis <br /> Detta skapar en public-mapp med dina genererade statiska sidor. <br />
 <p>
-
+
         </main>
         <footer></footer>
     </div>
