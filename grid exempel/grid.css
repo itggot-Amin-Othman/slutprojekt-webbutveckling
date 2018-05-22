@@ -1,0 +1,38 @@
+main {
+    display:grid;
+    grid-template-rows: 1fr,1fr,1fr;
+    grid-template-columns: 1fr, 1fr;
+    height: 360px;
+    grid-gap: 2px;
+}
+
+.d1{
+    background-color: aqua;
+    grid-row: auto;
+    grid-column: 1/2;
+}
+.d2{
+    background-color: green;
+    grid-row: auto;
+    grid-column: 2/3;
+}
+.d3{
+    background-color: rgba(17, 0, 255, 0.781);
+    grid-row: auto;
+    grid-column: auto;
+}
+.d4{
+    background-color: red;
+    grid-row: auto;
+    grid-column: auto;
+}
+.d5{
+    background-color: yellow;
+    grid-row: auto;
+    grid-column: auto;
+}
+.d6{
+    background-color: rgb(255, 0, 234);
+    grid-row: auto;
+    grid-column: auto;
+}
