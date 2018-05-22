@@ -4,7 +4,8 @@
 <p> Stasis och sass används för att göra det enklare för den som skriver koden samt för den som sedan läser den. Stasis låter dig skriva i flera olika filer som sedan sammanställs till en enda fil. Genom att endast ha en fil kan man effektivisera överföringen av data över internet. </p>
 <p> </p>
 <h2> Hur? </h2>
-<p> Installera först stasis och sass genom att i terminalen köra <br /> gem install stasis <br /> gem install sass <br /> <br /> Lägg till filändelsen .erb på alla .html-filer (inklusive .html) och .scss på alla css-filer<br />  Skapa en ruby fil döpt till "controller.rb" i samma mapp som dina html filer och skriv in <br /> ignore( /\/_.*/) <br /> ignore(/.*.sass-cache.*/) <br />  layout('layout.html.erb') <br /> <br /> I terminalen, navigera till mappen med dessa filer och kör
+<p> Installera först stasis och sass genom att i terminalen köra </p>
+<p class=code> gem install stasis <br /> gem install sass <br /> <br /></p> <p>Lägg till filändelsen .erb på alla .html-filer (inklusive .html) och .scss på alla css-filer<br />  Skapa en ruby fil döpt till "controller.rb" i samma mapp som dina html filer och skriv in </p> <code> ignore( /\/_.*/) <br /> ignore(/.*.sass-cache.*/) <br />  layout('layout.html.erb') <br /> <br /> </code><p> I terminalen, navigera till mappen med dessa filer och kör
 stasis <br /> Detta skapar en public-mapp med dina genererade statiska sidor. <br />
 <p>För att slippa skriva stasis i terminalen efter varje ändring kan du köra "stasis -d 8080" i mappen.</br> Detta startar en liten server som automatiskt kör stasis vid varje förändring. </p>
 <h2>Exempel:</h2>

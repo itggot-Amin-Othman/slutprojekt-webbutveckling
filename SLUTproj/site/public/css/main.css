@@ -2,6 +2,12 @@ body {
   margin: 0;
   font-family: "Lato", sans-serif; }
 
+.code {
+  font-family: monospace; }
+
+ul {
+  list-style-type: none; }
+
 .container {
   display: grid;
   grid-template-rows: 95vh, 5vh;
@@ -17,34 +23,6 @@ header {
   padding: 0;
   background-image: url(../img/slutheaderL.png); }
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-*/
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
-  header {
-    height: 108px;
-    width: 100vw;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    padding: 0;
-    background-image: url(../img/slutheaderM.png); }
-
-  .container {
-    width: 80vw; } }
-/*
-  ##Device = Phones
-*/
-@media only screen and (max-device-width: 480px) {
-  header {
-    height: 68px;
-    width: 100vw;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    padding: 0;
-    background-image: url(../img/slutheaderS.png); }
-
-  .container {
-    width: 100vw; } }
 body {
   transition: background-color .2s; }
 
@@ -87,3 +65,31 @@ main {
 
   .menu a {
     font-size: 18px; } }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  header {
+    height: 108px;
+    width: 100vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-image: url(../img/slutheaderM.png); }
+
+  .container {
+    width: 80vw; } }
+/*
+  ##Device = Phones
+*/
+@media only screen and (max-device-width: 480px) {
+  header {
+    height: 68px;
+    width: 100vw;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-image: url(../img/slutheaderS.png); }
+
+  .container {
+    width: 100vw; } }
